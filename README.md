@@ -1,146 +1,71 @@
-## Developer Job Board
 
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
+# Getting Started with Create React App
 
-<!-- PROJECT SHIELDS -->
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p align="center">
-  <a href="https://github.com/ignatius22/redux-bookstore">
-    <img src="https://storage.googleapis.com/blog-images-backup/1*3SVfBkNZI2f-sspiq59xcw.png" alt="React Logo" width="120" height="120">
-  </a>
+## Available Scripts
 
-  <p align="center">
-    This project is a solo project to sharpen my React/Redux skill. 
-  </p>
-</p>
+In the project directory, you can run:
 
-<!-- TABLE OF CONTENTS -->
+### `npm run dev-server`
 
-## Table of Contents
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- [About the Project](#about-the-project)
-- [Contributors](#Installation)
-- [Contributors](#contributors)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## About The Project
+### `npm test`
 
-This project is a React-Redux full e-commerce website; it is full desktop app. Use webpack, firebase and a bunch of other technologies to improve my React skill and have a better understanding. It has the following features:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Admin Panel
+### `npm run build`
 
-In the admin panel you can do the following:
-- See Orders
-- See total products
-- Add product
-- Edit product
-- Delete product
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<p align="center">
-    <img src="static/admin-add-product.png" alt="admin-products" >
-</p>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<p align="center">
-    <img src="static/admin-product-panel.png" alt="admin-products" >
-</p>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### User's Panel
+### `npm run eject`
 
-In the user's panel you can do the following:
-- Sign Up
-- Sign In (With Google or Email and Password)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-<p align="center">
-    <img src="static/signUp.png" alt="sign-up" >
-</p>
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-<p align="center">
-    <img src="static/signIn.png" alt="sign-in" >
-</p>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Edit Account Panel
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-In this project, users can also Edit their account. By editing the updating their profile banner, profile avatar, name, address and phone number.
+## Learn More
 
-### Checkout Panel
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-In this panel/page, user can view Product they order, total price and also add or remove item from the cart. Also included is the shipping method and shipping mobile number.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-<p align="center">
-    <img src="static/checkout1.png" alt="checkout" >
-</p>
+### Code Splitting
 
-<p align="center">
-    <img src="static/checkout2.png" alt="checkout" >
-</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-<p align="center">
-    <img src="static/home-page.png" alt="checkout" >
-</p>
-Home page
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-<p align="center">
-    <img src="static/product-view.png" alt="checkout" >
-</p>
-Product view
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
 
-## Live Link  (Netlify)
-[Project live link](https://objective-lovelace-6fd75c.netlify.app/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Installation
+### Deployment
 
-To run 'WT-tech ecommerce' locally, clone the repository, navigate to the cloned directory.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-#### Follow these commands step by step:
+### `npm run build` fails to minify
 
-```
-github.com:jstloyal/WT-tech.git
-cd WT-tech.git
-npm install
-npm run dev-server
-```
-
-### Built With
-
-This project was built using these technologies.
-
-- React
-- Redux
-- VS Code editor
-- NPM
-- GitHub
-- webpack
-- Firebase
-- Bootstrap
-- Netlify
-
-## Contributors
-
-**Author**
-
-​**Adetayo Sunkanmi**
-
-- Github: [jstloyal](https://github.com/jstloyal)
-- Twitter: [@jstloyalty](https://twitter.com/jstloyalty)
-- Linkedin: [Adetayo Sunkanmi](https://www.linkedin.com/in/jstloyalty)
-- E-mail: jstloyalty@gmail.com
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-- 
-
-## License
-
-📝
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
