@@ -1,0 +1,29 @@
+.home-page {
+   background-color: #4e598c;
+   min-height: 88vh;
+ }
+ 
+ .img {
+   position: relative;
+   min-height: 150vh;
+   width: 500px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .home-page h1 {
+   font-size: 5rem;
+   color: #fcaf58;
+   text-shadow: 0.5rem 0.5rem 0.75rem black;
+ }
+ 
+ .menu-link {
+   margin: 2rem auto;
+ }
+ 
+ .button {
+   padding: 1.5rem 3rem;
+ }

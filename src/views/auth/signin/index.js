@@ -79,7 +79,7 @@ const SignIn = (props) =>{
                 <>
                 <div className={`signin ${signInStatus.message && (!authStatus.success && 'input-error')}`}>
                     <div className="signin-main">
-                        <h3> Food Hub Sign in </h3>
+                         <p> Food Hub Sign in  </p>
                         <br/>
                         <div className="signin-wrapper">
                             <form onSubmit={onSubmitForm}>

@@ -7,6 +7,7 @@ import UserAvatar from 'views/account/components/UserAvatar';
 import SearchBar from './SearchBar';
 import FiltersToggle from './FiltersToggle';
 import MobileNavigation from './MobileNavigation';
+import ContactUs from '../../views/contactus/index.js';
 
 import logo from '../../../static/logo.png';
 
@@ -97,7 +98,8 @@ const Navigation = ({ isAuth, path, history }) => {
         </>
       )}
       <ul className="navigation-menu">
-        <li className="navigation-menu-item">
+          <li className="navigation-menu-item">
+            
           <BasketToggle>
             {({ onClickToggle }) => (
               <button 
@@ -112,7 +114,12 @@ const Navigation = ({ isAuth, path, history }) => {
               </button>
             )}
           </BasketToggle>
-        </li>
+          </li>
+          <li className="contactus">
+            <NavLink className="contact"
+              onClick={onClickLink} to='/contactus'>CONTACT US </NavLink>
+            
+          </li>
         {isAuth ? (
           <li className="navigation-menu-item">
             <UserAvatar isAuthenticating={store.isAuthenticating} profile={store.profile} />

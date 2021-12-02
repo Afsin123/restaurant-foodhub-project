@@ -11,12 +11,10 @@ export const getProductsSuccess = products => ({
 export const cancelGetProducts = () => ({
     type: 'CANCEL_GET_PRODUCTS'
 });
-
 export const addProduct = product => ({
     type: 'ADD_PRODUCT',
     payload: product
 });
-
 export const addProductSuccess = product => ({
     type: 'ADD_PRODUCT_SUCCESS',
     payload: product

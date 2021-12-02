@@ -12,7 +12,8 @@ import EditProduct from 'views/admin/edit_product';
 import AddProduct from 'views/admin/add_product';
 
 import ProductSearch from 'components/product/ProductSearch';
-import Category from 'views/category/category.js';
+
+import Category from 'views/category';
 import SignUp from 'views/auth/signup';
 import SignIn from 'views/auth/signin';
 import ForgotPassword from 'views/auth/forgot_password';
@@ -23,6 +24,7 @@ import CheckOutStep1 from 'views/checkout/step1';
 import CheckOutStep2 from 'views/checkout/step2';
 import PageNotFound from 'views/error/PageNotFound';
 import ScrollToTop from 'components/ui/ScrollToTop';
+import ContactUs from '../views/contactus';
 
 export const history = createBrowserHistory();
 const AppRouter = () => (
@@ -49,17 +51,22 @@ const AppRouter = () => (
         <PublicRoute
         component={ScrollToTop(SignIn)}
         path="/signin"
+            />
+        <PublicRoute
+        component={ContactUs}
+        exact
+        path="/contactus"
         />
-        {/* <ClientRoute
+        <ClientRoute
         component={ScrollToTop(UserAccount)}
         exact
         path="/account"
-        /> */}
-        {/* <ClientRoute
+        />
+        <ClientRoute
         component={ScrollToTop(EditAccount)}
         exact
         path="/account/edit"
-        /> */}
+        />
             
             <PublicRoute
         component={ScrollToTop(Category)}
