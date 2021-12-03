@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
+// import React from 'react'
 // import React, { useState, useEffect, useRef } from 'react';
 // import { useSelector, useDispatch } from 'react-redux';
 
 
-export class index extends ContactUs {
-  render() {
-    return (
-      <div>
-        <h3> Contact Us </h3>
-      </div>
-    )
-  }
-}
+// export class index extends ContactUs {
+//   render() {
+//     return (
+//       <div>
+//         <h3> Contact Us </h3>
+//       </div>
+//     )
+//   }
+// }
 
-export default ContactUs
+// export default ContactUs
 
 
 
