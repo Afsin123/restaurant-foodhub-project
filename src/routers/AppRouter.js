@@ -37,8 +37,7 @@ const AppRouter = () => (
         />
         <PublicRoute
         component={Home}
-        exact
-        path="/"
+        path="/home"
         />
         <PublicRoute
         component={ScrollToTop(SignUp)}
@@ -68,9 +67,10 @@ const AppRouter = () => (
         path="/account/edit"
         />
             
-            <PublicRoute
+        <PublicRoute
         component={ScrollToTop(Category)}
-        path="/category"
+        exact
+        path="/"
         />
         <ClientRoute
         component={ScrollToTop(CheckOutStep1)}

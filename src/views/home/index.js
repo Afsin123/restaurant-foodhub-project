@@ -45,7 +45,7 @@ const Home = (props) => {
     }
   };
 
-  const isFiltered = ['keyword', 'brand', 'minPrice', 'maxPrice', 'sortBy'].some(key => !!store.filter[key]);
+  const isFiltered = ['keyword', 'brand', 'minPrice', 'maxPrice', 'sortBy', 'category'].some(key => !!store.filter[key]);
   const displaySelected = product => setProductSelected(product);
   const foundOnBasket = id => !!store.basket.find(item => item.id === id); 
   const onOpenModal = () => setModalOpen(true);

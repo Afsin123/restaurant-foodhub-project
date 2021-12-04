@@ -1,4 +1,6 @@
+import {LOADING} from 'constants/constants'
+
 export const isLoading = (bool = true) => ({
-    type: 'LOADING',
+    type: LOADING,
     payload: bool
 });

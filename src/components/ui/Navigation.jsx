@@ -75,7 +75,7 @@ const Navigation = ({ isAuth, path, history }) => {
           <img src={logo}/>
         </Link>
       </div>
-      {path === '/' && (
+      {path === '/home' && (
         <>
           <SearchBar 
               isLoading={store.isLoading}
@@ -115,18 +115,18 @@ const Navigation = ({ isAuth, path, history }) => {
             )}
           </BasketToggle>
           </li>
-          <li className="contactus">
+          {/* <li className="contactus">
             <NavLink className="contact"
               onClick={onClickLink} to='/contactus'>CONTACT US </NavLink>
             
-          </li>
+          </li> */}
         {isAuth ? (
           <li className="navigation-menu-item">
             <UserAvatar isAuthenticating={store.isAuthenticating} profile={store.profile} />
           </li>
         ) : (
           <li className="navigation-action">
-            {(path === '/signin' || path === '/') && (
+            {(path === '/signin' || path === '/home' || path === '/' ) && (
               <NavLink 
                   activeClassName="navigation-menu-active"
                   className="button button-small"
@@ -137,7 +137,7 @@ const Navigation = ({ isAuth, path, history }) => {
                 Sign Up
               </NavLink>
             )}
-            {(path === '/signup' || path === '/forgot_password' || path === '/') && (
+            {(path === '/signup' || path === '/forgot_password' || path === '/' || path ==='/home') && (
                 <NavLink 
                     activeClassName="navigation-menu-active"
                     className="button button-small button-muted margin-left-s"
