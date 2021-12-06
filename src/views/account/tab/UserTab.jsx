@@ -5,19 +5,20 @@ const UserTab =(props)=>{
     return(
         <div className="user-tab">
             <div className="user-tab-nav">
-                <ul className="user-tab-menu">
+                <ul className="user-tab-menu" style={{color: "white"}}>
                     {props.children.map(child =>(
-                        <li
-                        className={`user-tab-item ${child.props.index === activeTab ? 'user-tab-active' : ''}`}
+                        <li 
+                        className={`user-tab-item  ${child.props.index === activeTab ? 'user-tab-active' : ''}`}
                         key={child.props.label}
-                        onClick={()=>onClickTabItem(child.props.index)}
+                            onClick={() => onClickTabItem(child.props.index)}
+                            
                         
                         >
                             {child.props.label}
                         </li>
                     ))}               
                 </ul>
-                <div className="user-tab-content">
+                <div className="user-tab-content" >
                     {props.children.map((child) =>{
                         if(child.props.index !== activeTab) return undefined;
                          return child.props.children;

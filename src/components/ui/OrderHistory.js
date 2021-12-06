@@ -1,5 +1,10 @@
-
-
+import React from 'react';
+import {
+  TableContainer, Table, TableHead,
+  TableRow, TableBody, TableCell
+} from '@material-ui/core';
+import moment from 'moment';
+import { useHistory } from 'react-router-dom';
 
 const columns = [
    {
@@ -60,12 +65,12 @@ const columns = [
          <TableBody>
  
            {(Array.isArray(orders) && orders.length > 0) && orders.map((row, pos) => {
-             const { documentID } = row;
+             const {id } = row;
  
              return (
                <TableRow
                  key={pos}
-                 onClick={() => history.push(`/order/${documentID}`)}
+                 onClick={() => history.push(`/order/${id}`)}
                >
  
                  {columns.map((column, pos) => {

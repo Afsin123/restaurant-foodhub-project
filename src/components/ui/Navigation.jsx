@@ -7,7 +7,7 @@ import UserAvatar from 'views/account/components/UserAvatar';
 import SearchBar from './SearchBar';
 import FiltersToggle from './FiltersToggle';
 import MobileNavigation from './MobileNavigation';
-import ContactUs from '../../views/contactus/index.js';
+//import ContactUs from '../../views/contactus/index.js';
 
 import logo from '../../../static/logo.png';
 

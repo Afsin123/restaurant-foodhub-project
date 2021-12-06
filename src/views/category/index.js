@@ -9,11 +9,12 @@ const Category = () => {
        <Container>
          <Grid container spacing={4}>
            <Grid item xs={12} sm={6}>
-             <Typography className="title" variant="h2">
-               Are you hungry? 
+             <Typography className="title" variant="h3">
+               <p>I am ordering it..</p>
+               <p> FoodHub</p>
                   </Typography>
                   <Typography className="title" variant="h4">
-               FOODHUB
+              
              </Typography>
              <Button className="shopping-button" href="/home">
                VIEW MENU

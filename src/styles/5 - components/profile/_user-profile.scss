@@ -1,14 +1,15 @@
 .user-profile {
   display: flex;
   margin: auto;
+  color: black;
 
   @include mobile {
     width: 100%;
   }
 }
 .orderedproducts{
-  background-color: #FFDEAD;
-  border-left: 20px solid orange;
+  background-color: #fdfdfc;
+  border-left: 20px solid rgb(253, 253, 251);
   padding-bottom: 20px;
   padding-top: 20px;
   border-radius: 30px;
@@ -90,7 +91,7 @@
 
 .user-profile-details {
   padding: 9.5rem $m-size $l-size;
-  color: $white;
+  color:blue;
 }
 
 .user-profile-name {

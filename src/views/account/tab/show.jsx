@@ -9,18 +9,29 @@ const ShowOrders = (props) =>{
                         <h2>Product Name</h2>
                         <h5>{props.name.map(item=>
                             <div>
-                                <p>{item}</p>
+                                <p style={{ color: "white" }}>{item}</p>
                                 <br/>
                             </div>
                             )}</h5>
                     </div>
                     <div className="product-form-fieldproductname">
-                        <h2 style={{color: "red", marginTop:"0px", backgroundColor:"orange"}}>Price</h2>
+                        <h2 >Price</h2>
                         <h5>{props.price.map(item=>
                             <div>
-                                <p>{item}</p>
+                                <p style={{ color: "white" }}>{item}</p>
                                 <br/>
                             </div>
+                            // marginTop:"0px", ,  backgroundColor:"black"}}
+                            )}</h5>
+                    </div>
+                    <div className="product-form-fieldproductname">
+                        <h2 style={{ color: "white", marginTop:"0px" }}>Order Id</h2>
+                        <h5>{props.price.map(item=>
+                            <div>
+                                <p style={{ color: "white", }}>{item}</p>
+                                <br/>
+                            </div>
+                            // marginTop:"0px", ,  backgroundColor:"black"}}
                             )}</h5>
                     </div>
                 </div>

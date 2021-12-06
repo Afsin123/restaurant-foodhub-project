@@ -24,7 +24,7 @@ import CheckOutStep1 from 'views/checkout/step1';
 import CheckOutStep2 from 'views/checkout/step2';
 import PageNotFound from 'views/error/PageNotFound';
 import ScrollToTop from 'components/ui/ScrollToTop';
-//import ContactUs from '../views/contactus';
+import contactus from 'views/contactus';
 
 export const history = createBrowserHistory();
 const AppRouter = () => (
@@ -49,8 +49,14 @@ const AppRouter = () => (
         />
         <PublicRoute
         component={ScrollToTop(SignIn)}
-        path="/signin"
+                path="/signin"
+                
             />
+
+        <PublicRoute
+        component={contactus}
+        path="/contactus"
+        />
         {/* <PublicRoute
         component={ContactUs}
         exact

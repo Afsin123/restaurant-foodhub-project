@@ -64,8 +64,8 @@ const Filters = (props) => {
 console.log(props.filter.brand)
   return (
     <div className="filters">
-      {/* <div className="filters-field">
-        <span>Brand</span>
+      <div className="filters-field">
+        <span>Category</span>
         <br/>
         <br/>
         {props.productsLength === 0 && props.isLoading ? (
@@ -77,14 +77,14 @@ console.log(props.filter.brand)
               disabled={props.isLoading || props.productsLength === 0}
               onChange={onBrandFilterChange}
           >
-            <option value="">All Brands</option>
-            <option value="APPLE">APPLE</option>
-            <option value="SAMSUNG">SAMSUNG</option>
-            <option value="INFINIX">INFINIX</option>
-            <option value="NOKIA">NOKIA</option>
+            <option value="">All Categories</option>
+            <option value="chinese">CHINESE</option>
+            <option value="pizza">  PIZZA</option>
+            <option value="veg"> VEG</option>
+            
           </select>
         )}
-      </div> */}
+      </div>
       <div className="filters-field">
         <span>Sort By</span>
         <br/>

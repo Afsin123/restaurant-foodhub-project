@@ -147,6 +147,14 @@ class Firebase {
   removeProduct = id => this.db.collection('products').doc(id).delete();
 }
 
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+      unsubscribe();
+      resolve(userAuth);
+    }, reject);
+  })
+}
 const firebase = new Firebase();
 
 export default firebase;

@@ -5,6 +5,7 @@
   background: white;
   border-radius: 50px;
   border: 1px solid $border-color;
+  color: black;
 
   @media (max-width: $mobile) {
     width: 100%;
@@ -21,7 +22,7 @@
 }
 
 .user-tab-nav {
-  background: black;
+  background :white;
   border-bottom: 5px solid $border-color;
   // border-radius: 50px;
   
@@ -42,7 +43,8 @@
 
 .user-tab-item {
   list-style-type: none;
-  color: $gray-10;
+  color: black;
+  background-color: blanchedalmond;
   padding: $m-size;
   font-size: $font-medium;
   border-bottom: 1px solid transparent;

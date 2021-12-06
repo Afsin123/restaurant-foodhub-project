@@ -8,6 +8,11 @@ export const setBrandFilter = brand => ({
     payload: brand
 });
 
+// export const setBrandFilter = category => ({
+//     type: 'SET_CATEGORY_FILTER',
+//     payload: category
+// });
+
 export const setMinPriceFilter = min => ({
     type: 'SET_MIN_PRICE_FILTER',
     payload: min

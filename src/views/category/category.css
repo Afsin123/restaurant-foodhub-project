@@ -1,5 +1,5 @@
 .banner {
-  padding-top: 150px;
+  padding-top: 180px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12,12 +12,12 @@
 }
 
 .banner > div > div {
-  align-items: center;
+  align-items: cover;
 }
 
 .banner .brand {
   display: flex;
-  align-items: center;
+  align-items: cover;
 }
 
 .banner .brand img {

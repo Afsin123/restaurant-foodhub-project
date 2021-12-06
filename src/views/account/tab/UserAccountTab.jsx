@@ -34,9 +34,9 @@ const UserProfile = (props) => {
                 </div>
                 <div className="user-profile-details">
                     <h2 className="user-profile-name">{profile.fullname}</h2>
-                    <span>Email</span>
+                    <span >Email</span >
                     <br/>
-                    <h5>{profile.email}</h5>
+                    <h5 style={{color: "black"}}>{profile.email}</h5>
                     <span>Address</span>
                     <br/>
                     {profile.address ? (
