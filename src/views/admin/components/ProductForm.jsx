@@ -89,10 +89,10 @@ const ProductForm =({product, onSubmit, isLoading})=>{
                             &nbsp;
                             <div className="product-form-field">
                                 <Input 
-                                    label="* Product Brand"
+                                    label="* Category"
                                     maxLength={40}
                                     readOnly={isLoading}
-                                    placeholder="Brand"
+                                    placeholder="Category"
                                     onInputChange={onProductBrandInput}
                                     isRequired={true}
                                     field="brand"

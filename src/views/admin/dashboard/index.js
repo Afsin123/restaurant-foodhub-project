@@ -43,33 +43,60 @@ const Dashboard =()=>{
         getListUsers();
     },[]);
     
-    return(
-        <div className="product-form-inputsadmin">
-            <div className="d-flex">
-                <div className="product-form-field1">
-                    <h2>Name</h2>
-                    <h5>{name.map(item=><p className="admin-product-details">{item}</p>)}</h5>
-                </div>
-                {/* <div className="product-form-fieldemail">
-                    <h2>Phone</h2>
-                    <h5>{mobile.map(item=><p className="admin-product-details">{item}</p>)}</h5>
-                </div> */}
-                <div className="product-form-fieldemail">
-                    <h2>Product</h2>
-                    <h5>{productname.map(item=><p className="admin-product-details">{item}</p>)}</h5>
-                </div>
-                <div className="product-form-fieldaddress">
-                    <h2>Address</h2>
-                    <h5>{address.map(item=><p className="admin-product-details">{item}</p>)}</h5>
-                </div>
-                <div className="product-form-field1">
-                    <h2>Price</h2>
-                    <h5>{price.map(item=><p className="admin-product-details">{item}</p>)}</h5>
-                </div>
-            </div>
+    // return(
+    //     <div className="product-form-inputsadmin">
+    //         <div className="d-flex">
+    //             <div className="product-form-field1">
+    //                 <h2>Name</h2>
+    //                 <h5>{name.map(item=><p className="admin-product-details">{item}</p>)}</h5>
+    //             </div>
+    //             {/* <div className="product-form-fieldemail">
+    //                 <h2>Phone</h2>
+    //                 <h5>{mobile.map(item=><p className="admin-product-details">{item}</p>)}</h5>
+    //             </div> */}
+    //             <div className="product-form-fieldemail">
+    //                 <h2>Product</h2>
+    //                 <h5>{productname.map(item=><p className="admin-product-details">{item}</p>)}</h5>
+    //             </div>
+    //             <div className="product-form-fieldaddress">
+    //                 <h2>Address</h2>
+    //                 <h5>{address.map(item=><p className="admin-product-details">{item}</p>)}</h5>
+    //             </div>
+    //             <div className="product-form-field1">
+    //                 <h2>Price</h2>
+    //                 <h5>{price.map(item=><p className="admin-product-details">{item}</p>)}</h5>
+    //             </div>
+    //         </div>
            
-        </div>
+    //     </div>
+    // )
+    return (
+
+
+        <table className="product-form-inputsadmin">
+            <thead >
+                <tr>
+                    <th scope="col" className="product-form-field1"> <h2>Name</h2></th>
+                    <th scope="col" className="product-form-fieldemail"> <h2>Product</h2></th>
+                    <th scope="col" className="product-form-fieldaddress"> <h2>Address</h2></th>
+                    <th scope="col" className="product-form-field1"> <h2>Price</h2></th>
+                </tr>
+            </thead >
+            <tbody className="product-form-inputsadmin" >
+                <tr>
+                    <td className="product-form-field1"> {name.map(item => <p className="admin-product-details">{item}</p>)}</td>
+                    <td className="product-form-fieldemail">{productname.map(item => <p className="admin-product-details">{item}</p>)}</td>
+                    <td className="product-form-fieldaddress">{address.map(item => <p className="admin-product-details">{item}</p>)}</td>
+                    <td className="product-form-field1"> {price.map(item => <p className="admin-product-details">{item}</p>)}</td>
+                </tr>
+
+
+            </tbody>
+        </table >
     )
+
+
 }
+
 
 export default Dashboard;

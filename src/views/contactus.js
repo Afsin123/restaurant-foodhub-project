@@ -120,7 +120,7 @@ class contactus extends Component {
                 .sendForm(
                    "gmail",
                    " template_qcbtier",
-                 ".contact_form_class",
+                 ".form-group",
                    " user_gZmOXtq7ODlgX0vXpknV4 ",
                 )
                    .then()
@@ -133,11 +133,11 @@ class contactus extends Component {
      
     }
       
-   //  handleSubmit(values) {
-   //      console.log("Current State is: " + JSON.stringify(values));
-   //      this.props.postFeedback(values);
-   //      this.props.resetFeedbackForm();
-   //  }
+    handleSubmit(values) {
+        console.log("Current State is: " + JSON.stringify(values));
+        //this.props.postFeedback(values);
+        this.props.resetFeedbackForm();
+    }
 
     render() {
         return(
@@ -233,8 +233,8 @@ class contactus extends Component {
                             <Row className="form-group">
                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
                                 <Col md={10}>
-                                    <Control.text model=".telnum" id="telnum" name="telnum"
-                                        placeholder="Tel. Number"
+                                    <Control.text model="phone" id="phone" name="phone"
+                                        placeholder="phone"
                                         className="form-control"
                                         validators={{
                                             required, minLength: minLength(3), maxLength: maxLength(15), isNumber
@@ -274,7 +274,7 @@ class contactus extends Component {
                                      />
                                 </Col>
                             </Row>
-                            <Row className="form-group">
+                            {/* <Row className="form-group">
                                 <Col md={{size: 6, offset: 2}}>
                                     <div className="form-check">
                                         <Label check>
@@ -292,15 +292,15 @@ class contactus extends Component {
                                         <option>Email</option>
                                     </Control.select>
                                 </Col>
-                            </Row>
-                            <Row className="form-group">
+                            </Row> */}
+                            {/* <Row className="form-group">
                                 <Label htmlFor="message" md={2}>Your Feedback</Label>
                                 <Col md={10}>
                                     <Control.textarea model=".message" id="message" name="message"
                                         rows="12"
                                         className="form-control" />
                                 </Col>
-                            </Row>
+                            </Row> */}
                             <Row className="form-group">
                                 <Col md={{size:10, offset: 2}}>
                                     <Button type="submit" color="primary">

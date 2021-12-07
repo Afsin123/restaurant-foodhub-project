@@ -6,25 +6,35 @@ import "./category.css";
 const Category = () => {
    return (
      <div className="banner">
-       <Container>
-         <Grid container spacing={4}>
-           <Grid item xs={12} sm={6}>
-             <Typography className="title" variant="h3">
-               <p>I am ordering it..</p>
-               <p> FoodHub</p>
-                  </Typography>
-                  <Typography className="title" variant="h4">
+       <Container  > 
+         <Grid container spacing={0}>
+           <Grid item xs={12}  >
+           
+             {/* <Typography className="title" variant="h3"> */}
+             <div className="Quotes" style={{ fontFamily:"Open Sans Condensed"}} >
+               <p style={{ fontSize: "30px"}}> "Feeling hungry?  We deliver deliciousness ease!!</p>
+               <div> 
+               <p style={{ fontSize: "30px", marginTop: 0, marginBottom: "20px", marginLeft: "250px" } } > FOODHUB </p>
+               </div>
+               <img src={logo} alt="Fooditem"/> 
+             </div> 
+                  {/* </Typography> */}
+                  <Typography className="title" variant="h5">
               
              </Typography>
              <Button className="shopping-button" href="/home">
                VIEW MENU
              </Button>
            </Grid>
-           <Grid className="brand" item sm={6}>
-             <img src={logo} alt="Brand-tv" />
-           </Grid>
+           {/* <Grid className="brand" item sm={6} style={{backgroundColor: "white"}} >
+             <img src={logo} alt="Fooditem"  />
+           </Grid> */}
          </Grid>
-       </Container>
+
+         <div>
+
+         </div>
+       </Container> 
      </div>
    );
  };
