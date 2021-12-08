@@ -25,7 +25,7 @@ const Footer = ({ path }) => {
                 <div className="row">   
 
                     <div className="col-3 offset-1">
-                        <h5>LINKS</h5>
+                      <h5 style={{ color: " black" }}>LINKS</h5>
                         <ul className="list-unstyled">
                             <li><Link to="/home">Home</Link></li>
                             <li><Link to="/aboutus">About Us</Link></li>
@@ -35,7 +35,7 @@ const Footer = ({ path }) => {
                     </div>
 
                     <div className="col-3 offset-1">
-                        <h5>  OUR ADDRESS</h5>
+                        <h5 style={{ color: " black" }}>  OUR ADDRESS</h5>
                         <address>
                             ABC Street <br />
                             WXY Way <br />

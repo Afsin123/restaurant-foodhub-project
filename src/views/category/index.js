@@ -11,10 +11,10 @@ const Category = () => {
            <Grid item xs={12}  >
            
              {/* <Typography className="title" variant="h3"> */}
-             <div className="Quotes" style={{ fontFamily:"Open Sans Condensed"}} >
-               <p style={{ fontSize: "30px"}}> "Feeling hungry?  We deliver deliciousness ease!!</p>
+             <div className="Quotes" style={{ fontFamily:"Open Sans Condensed",  marginLeft: "200px"}} >
+               <p style={{ fontSize: "40px", marginBottom: "40px"}}> "Feeling hungry?  We deliver deliciousness ease!!</p>
                <div> 
-               <p style={{ fontSize: "30px", marginTop: 0, marginBottom: "20px", marginLeft: "250px" } } > FOODHUB </p>
+               <p style={{ fontSize: "40px", marginTop: 0, marginBottom: "40px", marginLeft: "250px" } } > FOODHUB </p>
                </div>
                <img src={logo} alt="Fooditem"/> 
              </div> 

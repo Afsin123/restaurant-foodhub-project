@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import PhoneInput from 'react-phone-input-2';//for getting mobileno
 import Input from 'components/ui/Input';//for form validation for email,shipping and mobile
+import StripeCheckout from "react-stripe-checkout";
 
 import { displayMoney } from 'helpers/utils';
 const ShippingForm =({
